@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./components/chatbot.css">
+    <link rel="stylesheet" href="./components/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chat Interface</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <a href="#" class="logo"><img src="logo.jpg" alt="Logo">
+            <p class="paragraph">Farmers Friend</p>
+        </a>
+        <ul class="main-nav" id="main-nav">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="dieses.html" class="nav-links">Dieses</a></li>
+            <li><a href="#" class="nav-links" style="color: blue;">Agribot</a></li>
+        </ul>
+    </nav>
+
+    <div class="chat-overlay">
+        <div id="messages"></div>
+        <div class="chat-input">
+            <div class="input-container">
+                <img id="image-preview" src="">
+                <textarea id="chat-textarea" placeholder="Type a message..."></textarea>
+            </div>
+            <button id="upload-btn"><i class="material-icons">attach_file</i></button>
+            <button id="mic-btn"><i class="material-icons">mic</i></button>
+            <button id="read-btn"><i class="material-icons">speaker_notes</i></button>
+            <button id="send-btn"><i class="material-icons">send</i></button>
+        </div>
+    </div>
+
+    <!-- Upload options modal -->
+    <div id="upload-options-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal-btn" class="close-btn">&times;</span>
+            <h2>Choose an option:</h2>
+            <button id="upload-device-btn">Upload from Device</button>
+            <button id="upload-camera-btn">Use Camera</button>
+        </div>
+    </div>
+    
+    <div id="camera-container" class="camera-container" style="display: none;">
+        <video id="camera-preview" autoplay></video>
+        <button id="capture-btn">Capture</button>
+        <button id="cancel-camera-btn">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

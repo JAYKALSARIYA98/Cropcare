@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./components/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Farmers Friend</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <a href="#" class="logo"><img src="logo.jpg" alt="">
+            <p class="paragraph">Farmers Friend</p>
+        </a>
+        <ul class="main-nav" id="main-nav">
+            <li><a href="#" class="nav-links" style="color: blue;">Home</a></li>
+            <li><a href="dieses.html" class="nav-links">Dieses</a></li>
+            <li><a href="pic.html" class="nav-links">Agribot</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slide-Up Text -->
+    <div class="content-container">
+        <div class="slide-up-container" id="Dieases-nav">
+            <div class="slide-up-content">
+                <h1 class="huge-text">Hello Farmers</h1>
+            </div>
+        </div>
+        <div class="card-container" id="Agribot-nav">
+            <div class="card1">
+                <p>
+                    <img src="C1.png" alt="" height="150">
+                </p>
+                <div class="inner-card">
+                    Cure and Suggestions for any dieases of plants using AI
+                </div>
+            </div>
+            <div class="card2">
+                <p>
+                    <img src="ai.png" alt="">
+                </p>
+                <div class="inner-card">
+                    AI powered chatbot that provides facility to disscuss about Any
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Get the card elements
+    const card1 = document.querySelector('.card1');
+    const card2 = document.querySelector('.card2');
+
+    // Add click event listeners to redirect
+    card1.addEventListener('click', () => {
+        window.location.href = 'dieses.html';
+    });
+
+    card2.addEventListener('click', () => {
+        window.location.href = 'pic.html';
+    });
+});
+
+    </script>
+</body>
+</html>
